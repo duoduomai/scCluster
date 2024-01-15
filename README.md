@@ -9,7 +9,17 @@ scCluster utilizes a two-stage training strategy to fuse the dual modalities and
 # Software dependencies
 
 scanpy==1.9.3
+
 torch==2.0.1
+
 numpy==1.24.3 
+
+pandas==2.0.1
+
+scikit-learn==1.2.2
+
+keras==2.9.0
+
+scipy==1.10.1
 
 #
