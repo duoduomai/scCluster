@@ -273,12 +273,6 @@ class scCluster(nn.Module):
             zhibiao = (acc, ami, nmi, ari)
             lst.append(zhibiao)
 
-            if best_ari < ari:
-                best_ari = ari
-                Zdata = Zdata.cpu().numpy()
-                np.save(save_dir,Zdata)
-                print('save successful')
-
             self.y_pred_last = self.y_pred
 
             loss_val = 0.0
