@@ -12,7 +12,7 @@ torch.manual_seed(44)
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='train', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--n_clusters', default=3, type=int)
+    parser.add_argument('--n_clusters', default=0, type=int)
     parser.add_argument('--cutoff', default=0.5, type=float, help='Start to train combined layer after what ratio of epoch')
     parser.add_argument('--batch_size', default=256, type=int)
     parser.add_argument('--data_file', default='data_file')
@@ -41,13 +41,16 @@ if __name__ == "__main__":
     parser.add_argument('--device', default='cuda')
     args = parser.parse_args()       
 
-    data_name = 'meldata'
-    data_path = './data/%s.txt'% data_name
-    label_path = './data/%s_truelabels.csv' % data_name
-    args.ae_weight_file = './results/%s_AE_weights_snp.pth' % data_name
-    args.save_dir = './model/%s_snp.pth' % data_name
-    pre_label_path = './data/pre_label/%s_snp.csv' % data_name
-    snp_data_path = './data/%s_snp.txt'% data_name
+    #dataset
+    data_name = 'XXX' 
+    data_path = './data/%s.txt'% data_name   #gene 
+    snp_data_path = './data/%s_snp.txt'% data_name   #eSNP
+    label_path = './data/%s_truelabels.csv' % data_name   #true labels used to calculate evaluation metrics
+
+    args.ae_weight_file = './results/%s_AE_weights.pth' % data_name
+    args.save_dir = './model/%s.pth' % data_name
+    pre_label_path = './data/pre_label/%s.csv' % data_name
+    
 
     x1 = pd.read_csv(data_path, header=None).to_numpy().astype(np.float32)
     x2 = pd.read_csv(snp_data_path, header=None).to_numpy().astype(np.float32)
