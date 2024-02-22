@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ##########1.download##########
 #paired-fastq
 ftp='era-fasp@fasp.sra.ebi.ac.uk:vol1/fastq'
