@@ -1,4 +1,4 @@
-# Input-demo
+## Input-demo
 
 Patel.txt -----gGene expression data from the Patel dataset.
 
@@ -6,7 +6,7 @@ Patel_snp.txt ----- eSNP data from the Patel dataset.
 
 Patel_truelabels.csv ----- truelabels from the Patel dataset.
 
-# output-demo
+## output-demo
 
 ACC = 0.9853
 
