@@ -22,4 +22,14 @@ keras==2.9.0
 
 scipy==1.10.1
 
-#
+# Usage
+
+```
+python run_scCluster.py 
+```
+Set data_name in run_scCluster.py as the target of the data before running. 
+
+Running requires three files: the gene expression file, eSNP file, and label file (only used for calculating evaluation metrics) for the dataset. 
+
+The final output reports the clustering performance, that is, the clustering indicator results between the predicted results and the real labels, and can output the trained cell embedding representation as needed. 
+
