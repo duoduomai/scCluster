@@ -1,6 +1,6 @@
 ## Input-demo
 
-Patel.txt -----gGene expression data from the Patel dataset.
+Patel.txt -----Gene expression data from the Patel dataset.
 
 Patel_snp.txt ----- eSNP data from the Patel dataset.
 
