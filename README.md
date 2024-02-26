@@ -25,7 +25,7 @@ scipy==1.10.1
 # Usage
 
 ```
-python run_scCluster.py  # set "data_name" as "Patel"
+python ./code/run_scCluster.py  # set "data_name" to "Patel" in run_scCluster.py
 ```
 Set data_name in run_scCluster.py as the target of the data before running. 
 
