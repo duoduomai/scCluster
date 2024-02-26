@@ -25,11 +25,32 @@ scipy==1.10.1
 # Usage
 
 ```
-python run_scCluster.py 
+python run_scCluster.py  # set "data_name" as "Patel"
 ```
 Set data_name in run_scCluster.py as the target of the data before running. 
 
 Running requires three files: the gene expression file, eSNP file, and label file (only used for calculating evaluation metrics) for the dataset. 
 
 The final output reports the clustering performance, that is, the clustering indicator results between the predicted results and the real labels, and can output the trained cell embedding representation as needed. 
+
+## Input-demo
+
+Patel.txt -----gGene expression data from the Patel dataset.
+
+Patel_snp.txt ----- eSNP data from the Patel dataset.
+
+Patel_truelabels.csv ----- truelabels from the Patel dataset.
+
+## Output-demo
+
+ACC = 0.9853
+
+NMI = 0.9583
+
+AMI = 0.9575
+
+ARI = 0.9652
+
+Save the cell embeddings as Patel.npy (optionaly).
+
 
